@@ -1,0 +1,37 @@
+#masthead {
+	@extend .navbar;
+	@extend .navbar-expand-lg;
+}
+
+#menu-principal {
+	@extend .navbar-nav;
+	flex-direction: row;
+
+	.menu-item {
+		@extend .nav-item;
+		display: inline-block;
+
+		> a {
+			@extend .nav-link;
+		}
+	}
+
+	.menu-item-has-children {
+		@extend .dropdown;
+
+		& a:hover {
+			& + .sub-menu {
+				display: block;
+			}
+		}
+	}
+
+	.sub-menu {
+		@extend .dropdown-menu;
+		position: absolute;
+
+		.menu-item {
+			@extend .dropdown-item;
+		}
+	}
+}
