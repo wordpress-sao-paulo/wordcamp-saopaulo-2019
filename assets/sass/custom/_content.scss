@@ -1,0 +1,11 @@
+.entry-header {
+	background: linear-gradient( 135deg, $gray-800, $black);
+	padding: 180px 0 60px 0;
+	margin-bottom: 5vh;
+
+	.entry-title {
+		@include make-container();
+		@include make-container-max-widths();
+		color: $white;
+	}
+}

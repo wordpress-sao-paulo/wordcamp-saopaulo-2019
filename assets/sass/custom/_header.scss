@@ -1,11 +1,12 @@
 #masthead {
 	@extend .navbar;
 	@extend .navbar-expand-lg;
-	@include one-side-container-margin( padding );
+	@include one-side-container-margin( padding, 0px );
 	padding-top: 15px !important;
 	padding-bottom: 15px !important;
 	justify-content: space-between;
-
+	position: absolute;
+	width: 100%;
 
 	hgroup {
 		background: url("https://2019.saopaulo.wordcamp.org/files/2019/07/logo-wcsp2019.png") no-repeat left center/contain;
