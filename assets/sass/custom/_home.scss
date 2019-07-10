@@ -12,19 +12,29 @@ body.home {
 	> .wp-block-column {
 		width: 100%;
 		flex-basis: 100%;
+		margin-bottom: 0;
 
 		& + .wp-block-column {
 			position: absolute;
 			left: 50%;
 			top: 50%;
 			transform: translate(-50%, -50%);
-			width: auto;
-			max-width: 600px;
-			margin: 0;
+			max-width: 580px;
 			z-index: $zindex-header - 50;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			margin-right: auto;
+			width: calc(100% - 60px);
+
+			@include media-breakpoint-up(lg) {
+				width: auto;
+				margin: 0;
+			}
+
+			.wp-block-columns {
+				flex-wrap: nowrap;
+			}
 		}
 
 		.wp-block-column {
@@ -36,6 +46,8 @@ body.home {
 		color: $black;
 
 		.wp-block-jetpack-slideshow_swiper-wrapper {
+			min-height: 380px;
+
 			&:after {
 				content: '';
 				position: absolute;
@@ -51,12 +63,21 @@ body.home {
 			filter: saturate(0);
 			object-fit: cover;
 			width: 100%;
+			min-height: 380px;
 		}
 	}
 
 	h2 {
 		@extend .display-title;
 		margin-bottom: 30px;
+	}
+
+	.wp-block-button {
+		margin: 0;
+
+		@include media-breakpoint-down(md) {
+			font-size: $font-size-sm;
+		}
 	}
 }
 
