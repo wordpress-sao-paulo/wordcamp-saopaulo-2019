@@ -98,3 +98,34 @@
 		}
 	}
 }
+
+
+#after-header-widgets {
+	width: 100%;
+	position: absolute;
+	@include one-side-container-margin( right, 0px );
+	z-index: 8;
+	display: flex;
+	justify-content: flex-end;
+	width: 32px;
+	top: 200px;
+
+	body.home & {
+		top: 38vh;
+	}
+
+	a {
+		color: $white;
+
+		&:hover,
+		&:active,
+		&:focus {
+			color: $primary;
+		}
+	}
+
+	ul {
+		margin: 0;
+		padding: .5em 0;
+	}
+}
