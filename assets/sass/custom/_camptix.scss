@@ -24,6 +24,13 @@
 			width: 100%;
 		}
 
+		/* Fix the Order Summary width */
+		.tix-order-summary th,
+		.tix-order-summary td {
+			width: 25%;
+			padding: .25em;
+		}
+
 		/* Make form fields visible on mobile */
 		input,
 		select {
