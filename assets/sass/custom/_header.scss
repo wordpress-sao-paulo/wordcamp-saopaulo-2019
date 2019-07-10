@@ -168,10 +168,14 @@
 	width: 32px;
 	top: 240px;
 
+	@include media-breakpoint-up(lg) {
+		top: 160px;
+	}
+
 
 	body.home & {
 		top: 50vh;
-		
+
 		@include media-breakpoint-up(lg) {
 			top: 38vh;
 		}
