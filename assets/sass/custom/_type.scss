@@ -1,7 +1,21 @@
+
 a {
 	transition: $transition-base;
 }
 
+.wp-block-button {
+	background: transparent !important;
+	
+	a {
+		@extend .btn;
+	}
+}
+
+.wp-block-button, .is-style-squared {
+	a {
+		border-radius: $border-radius !important;
+	}
+}
 
 .alt {
 	font-family: $font-family-monospace;

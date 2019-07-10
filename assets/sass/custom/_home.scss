@@ -60,6 +60,15 @@ body.home {
 	}
 }
 
+.btn-calendar {
+	background: transparent;
+
+	.wp-block-button__link {
+		color: currentColor;
+		background: transparent !important;
+	}
+}
+
 // Home content sections
 //
 
@@ -175,7 +184,7 @@ body.home {
 
 .section-text-image {
 	margin: 45px 0;
-	
+
 	.wp-block-column {
 		display: flex;
 		flex-direction: column;
