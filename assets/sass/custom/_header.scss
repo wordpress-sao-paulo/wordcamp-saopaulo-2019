@@ -117,7 +117,7 @@
 		flex-direction: row;
 	}
 
-	.menu-item {
+	> .menu-item {
 		@extend .nav-item;
 
 		> a {
@@ -164,14 +164,26 @@
 		.menu-item {
 			@extend .dropdown-item;
 			transition: all .3s ease;
+			padding: .2em;
 
 			&:hover,
 			&:active,
 			&:focus {
 				background: $gray-900;
 			}
-		}
 
+			a {
+				color: $white;
+				display: block;
+				padding: .5em 1.2em;
+
+				&:hover,
+				&:active,
+				&:focus {
+					text-decoration: none;
+				}
+			}
+		}
 
 		&:hover {
 			visibility: visible;
@@ -179,7 +191,6 @@
 		}
 	}
 }
-
 
 #after-header-widgets {
 	width: 100%;
@@ -193,9 +204,8 @@
 	width: 32px;
 
 	@include media-breakpoint-up(lg) {
-		top: 160px;
+		top: 130px;
 	}
-
 
 	body.home & {
 		top: 285px;
