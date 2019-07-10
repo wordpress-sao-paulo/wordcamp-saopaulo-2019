@@ -19,3 +19,14 @@ h1, h2, h3,
 .h1, .h2, .h3 {
 	letter-spacing: -0.03em;
 }
+
+
+@include media-breakpoint-down(md) {
+	h1, .h1, .display-title {
+		font-size: calc(4vw + 1rem);
+	}
+
+	h2, .h2 {
+		font-size: calc(2.8vw + 1rem);
+	}
+}
