@@ -3,7 +3,7 @@ body:not(.blog) {
 	.entry-header:first-of-type {
 		background: $gradient-dark;
 		margin-bottom: 5vh;
-		padding: 60px 0;
+		padding: 60px 60px 60px 0;
 
 		@include media-breakpoint-up(lg) {
 			padding: 180px 0 60px 0;

@@ -76,8 +76,9 @@
 	.site-title {
 		 a {
 			 background: url("https://2019.saopaulo.wordcamp.org/files/2019/07/logo-wcsp2019.png") no-repeat left center/contain;
-			 min-width: 170px;
-			 min-height: 100px;
+			 width: 170px;
+			 height: 100px;
+			 max-width: 50vw;
 			 margin-right: 45px;
 			 color: rgba($white, 0);
 			 font-size: 8px;
@@ -87,9 +88,13 @@
 
 	.site-description {
 		@extend .alt;
-		font-size: $font-size-sm;
 		color: rgba( $white, .6 );
 		max-width: 100px;
+		font-size: $font-size-xs;
+
+		@include media-breakpoint-up(md) {
+			font-size: $font-size-sm;
+		}
 	}
 }
 
@@ -165,8 +170,8 @@
 	z-index: 8;
 	display: flex;
 	justify-content: flex-end;
+	top: 250px;
 	width: 32px;
-	top: 240px;
 
 	@include media-breakpoint-up(lg) {
 		top: 160px;
@@ -174,10 +179,12 @@
 
 
 	body.home & {
-		top: 50vh;
+		width: 100%;
+		top: 240px;
 
 		@include media-breakpoint-up(lg) {
-			top: 38vh;
+			width: 32px;
+			top: 35vh;
 		}
 	}
 

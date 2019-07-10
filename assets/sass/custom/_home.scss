@@ -31,14 +31,11 @@ body.home {
 				width: auto;
 				margin: 0;
 			}
-
-			.wp-block-columns {
-				flex-wrap: nowrap;
-			}
 		}
 
 		.wp-block-column {
 			flex-basis: unset;
+			flex-grow: 0;
 		}
 	}
 
@@ -76,7 +73,17 @@ body.home {
 		margin: 0;
 
 		@include media-breakpoint-down(md) {
-			font-size: $font-size-sm;
+
+			a {
+				font-size: $font-size-sm;
+				padding: .5rem .7rem;
+			}
+
+			&.btn-calendar {
+				a {
+					padding: .5em;
+				}
+			}
 		}
 	}
 }
