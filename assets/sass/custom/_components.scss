@@ -26,3 +26,10 @@ table {
 iframe {
 	max-width: 100%;
 }
+
+
+.wp-embed-aspect-16-9 {
+	iframe {
+		max-height: 60vw;
+	}
+}
