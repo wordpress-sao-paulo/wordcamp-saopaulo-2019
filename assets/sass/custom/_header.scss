@@ -10,18 +10,28 @@
 	width: 100%;
 	z-index: $zindex-header;
 	font-size: $font-size-sm;
-	letter-spacing: .01em;
+	letter-spacing: .03em;
 
 	hgroup {
+		display: flex;
+	    align-items: center;
+	}
+
+	.site-title {
 		background: url("https://2019.saopaulo.wordcamp.org/files/2019/07/logo-wcsp2019.png") no-repeat left center/contain;
 		min-width: 170px;
 		min-height: 100px;
-		margin-right: 30px;
+		margin-right: 45px;
+		color: rgba($white, 0);
+		text-indent: -99999999px;
+		font-size: 8px;
 	}
 
-	.site-title,
 	.site-description {
-		@extend .sr-only;
+		@extend .alt;
+		font-size: $font-size-sm;
+		color: rgba( $white, .6 );
+		max-width: 100px;
 	}
 }
 
