@@ -105,6 +105,9 @@ $yiq-contrasted-threshold:  150;
 $yiq-text-dark:             $gray-900;
 $yiq-text-light:            $white;
 
+// Gradients
+$gradient-dark: linear-gradient( 135deg, $gray-800, $black);
+
 // Options
 //
 // Quickly modify global styling by enabling or disabling optional features.

@@ -1,5 +1,5 @@
 .entry-header {
-	background: linear-gradient( 135deg, $gray-800, $black);
+	background: $gradient-dark;
 	padding: 180px 0 60px 0;
 	margin-bottom: 5vh;
 
@@ -9,7 +9,6 @@
 		color: $white;
 	}
 }
-
 
 body:not(.home) {
 	.entry-content {
