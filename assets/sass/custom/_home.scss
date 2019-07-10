@@ -171,3 +171,14 @@ body.home {
 		}
 	}
 }
+
+
+.section-text-image {
+	margin: 45px 0;
+	
+	.wp-block-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
