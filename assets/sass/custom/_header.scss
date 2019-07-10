@@ -198,11 +198,9 @@
 
 
 	body.home & {
-		width: 100%;
-		top: 240px;
+		top: 340px;
 
 		@include media-breakpoint-up(lg) {
-			width: 32px;
 			top: 35vh;
 		}
 	}
