@@ -56,7 +56,8 @@
 	.menu-item-has-children {
 		@extend .dropdown;
 
-		a {
+		> a {
+			@extend .dropdown-toggle;
 
 			&:hover {
 				& + .sub-menu {
