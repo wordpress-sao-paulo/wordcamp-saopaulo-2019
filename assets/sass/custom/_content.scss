@@ -12,7 +12,8 @@
 
 body:not(.home) {
 	.entry-content {
-		@include make-container();
-		@include make-container-max-widths();
+		max-width: 900px;
+		margin: 0 auto;
+		padding: 15px;
 	}
 }
