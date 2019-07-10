@@ -15,5 +15,9 @@ body:not(.home) {
 		max-width: 900px;
 		margin: 0 auto;
 		padding: 15px;
+
+		h2, .h2 {
+			margin: 1.3em 0 .6em;
+		}
 	}
 }

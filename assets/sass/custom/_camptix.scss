@@ -1,0 +1,13 @@
+#tix {
+	margin-bottom: 45px;
+
+	input[type="submit"] {
+		@extend .btn;
+		@extend .btn-primary;
+		min-width: 200px;
+	}
+
+	table {
+		border-bottom: 2px solid $gray-300;
+	}
+}

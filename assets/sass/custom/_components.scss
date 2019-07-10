@@ -1,0 +1,21 @@
+// Buttons
+
+.wp-block-button {
+	background: transparent !important;
+
+	a {
+		@extend .btn;
+	}
+}
+
+.wp-block-button, .is-style-squared {
+	a {
+		border-radius: $border-radius !important;
+	}
+}
+
+
+// Tables
+table {
+	@extend .table;
+}
