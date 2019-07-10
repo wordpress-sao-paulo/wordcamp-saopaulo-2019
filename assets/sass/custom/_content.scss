@@ -39,12 +39,16 @@ body.blog {
 			display: block;
 			width: 100%;
 			background: $gradient-dark;
-			@include one-side-container-margin( padding, 0px );
-			padding-top: 180px !important;
-			padding-bottom: 60px !important;
 			margin-bottom: 5vh;
 			@extend h1;
 			color: $white;
+			padding: 60px 60px 60px 15px;
+			@include one-side-container-margin( padding-left, 0px );
+
+			@include media-breakpoint-up(lg) {
+				padding: 180px 0 60px 15px;
+			}
+
 		}
 	}
 
