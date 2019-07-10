@@ -43,12 +43,12 @@ body.blog {
 			@extend h1;
 			color: $white;
 			padding: 60px 60px 60px 15px;
-			@include one-side-container-margin( padding-left, 0px );
-
+			
 			@include media-breakpoint-up(lg) {
 				padding: 180px 0 60px 15px;
 			}
 
+			@include one-side-container-margin( padding-left, 0px );
 		}
 	}
 
