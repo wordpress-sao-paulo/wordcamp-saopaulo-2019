@@ -1,12 +1,16 @@
 #masthead {
 	@extend .navbar;
 	@extend .navbar-expand-lg;
+	@extend .navbar-dark;
 	@include one-side-container-margin( padding, 0px );
 	padding-top: 15px !important;
 	padding-bottom: 15px !important;
 	justify-content: space-between;
 	position: absolute;
 	width: 100%;
+	z-index: $zindex-header;
+	font-size: $font-size-sm;
+	letter-spacing: .01em;
 
 	hgroup {
 		background: url("https://2019.saopaulo.wordcamp.org/files/2019/07/logo-wcsp2019.png") no-repeat left center/contain;
@@ -54,18 +58,27 @@
 
 	.sub-menu {
 		@extend .dropdown-menu;
+		background: $black;
 		position: absolute;
 		display: block;
 		left: unset;
 		right: 0;
 		visibility: hidden;
 		opacity: 0;
-		transition: all .3s;
+		transition: all .3s ease;
 		transition-delay: .3s;
 
 		.menu-item {
 			@extend .dropdown-item;
+			transition: all .3s ease;
+
+			&:hover,
+			&:active,
+			&:focus {
+				background: $gray-900;
+			}
 		}
+
 
 		&:hover {
 			visibility: visible;

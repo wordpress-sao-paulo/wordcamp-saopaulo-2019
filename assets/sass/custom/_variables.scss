@@ -274,7 +274,7 @@ $h6-font-size:                $font-size-base;
 $headings-margin-bottom:      ($spacer / 2);
 $headings-font-family:        inherit;
 $headings-font-weight:        700;
-$headings-line-height:        1.2;
+$headings-line-height:        1.1;
 $headings-color:              inherit;
 
 $display1-size:               6rem;
@@ -610,6 +610,7 @@ $dropdown-header-color:             $gray-600;
 // Warning: Avoid customizing these values. They're used for a bird's eye view
 // of components dependent on the z-axis and are designed to all work together.
 
+$zindex-header: 					800;
 $zindex-dropdown:                   1000;
 $zindex-sticky:                     1020;
 $zindex-fixed:                      1030;
@@ -657,10 +658,10 @@ $navbar-toggler-padding-x:          .75rem;
 $navbar-toggler-font-size:          $font-size-lg;
 $navbar-toggler-border-radius:      $btn-border-radius;
 
-$navbar-dark-color:                 rgba($white, .5);
-$navbar-dark-hover-color:           rgba($white, .75);
+$navbar-dark-color:                 rgba($white, .9);
+$navbar-dark-hover-color:           rgba($white, 1);
 $navbar-dark-active-color:          $white;
-$navbar-dark-disabled-color:        rgba($white, .25);
+$navbar-dark-disabled-color:        rgba($white, .4);
 $navbar-dark-toggler-icon-bg:       str-replace(url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"), "#", "%23");
 $navbar-dark-toggler-border-color:  rgba($white, .1);
 
