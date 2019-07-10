@@ -12,6 +12,62 @@
 	font-size: $font-size-sm;
 	letter-spacing: .03em;
 
+	@include media-breakpoint-down(md) {
+		position: relative;
+		background: $black;
+
+		.site-navigation {
+			width: 100%;
+		}
+
+		.menu-toggle {
+			font-size: $font-size-lg;
+			color: $white;
+			height: 2rem;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&:after {
+				content: '';
+				display: inline-block;
+				height: 2px;
+				width: 35px;
+				background: currentColor;
+				box-shadow: 0 12px 0 0 currentColor, 0 -12px 0 0 currentColor;
+			}
+
+			&:hover,
+			&:active,
+			&:focus {
+				&:after {
+					color: $primary;
+				}
+			}
+		}
+
+		#menu-principal {
+			display: none;
+
+			.sub-menu {
+				position: static;
+				display: block;
+				visibility: visible;
+				opacity: 1;
+
+				 .menu-item {
+					color: inherit;
+				}
+			}
+
+			li:not(.btn):not(.btn-sm) {
+				a {
+					border-bottom: 1px solid $gray-900;
+				}
+			}
+		}
+	}
+
 	hgroup {
 		display: flex;
 	    align-items: center;
@@ -46,7 +102,6 @@
 
 	.menu-item {
 		@extend .nav-item;
-		display: inline-block;
 
 		> a {
 			@extend .nav-link;
@@ -80,6 +135,7 @@
 		opacity: 0;
 		transition: all .3s ease;
 		transition-delay: .3s;
+		font-size: inherit;
 
 		.menu-item {
 			@extend .dropdown-item;

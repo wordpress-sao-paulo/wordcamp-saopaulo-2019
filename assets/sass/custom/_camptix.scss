@@ -17,7 +17,7 @@
 	}
 
 	/* Stack columns on mobile */
-	@media screen and (max-width: $md) {
+	@include media-breakpoint-down(md) {
 		.tix-attendee-form tr td.tix-left,
 		.tix-attendee-form tr td.tix-right {
 			display: block;
