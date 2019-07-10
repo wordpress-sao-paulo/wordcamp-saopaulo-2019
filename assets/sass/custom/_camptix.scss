@@ -10,4 +10,18 @@
 	table {
 		border-bottom: 2px solid $gray-300;
 	}
+
+	/* Hide the Remaining Tickets info */
+	.tix_tickets_table .tix-column-remaining {
+		display: none;
+	}
+
+	/* Stack columns on mobile */
+	@media screen and (max-width: $md) {
+		.tix-attendee-form tr td.tix-left,
+		.tix-attendee-form tr td.tix-right {
+			display: block;
+			width: 100%;
+		}
+	}
 }
