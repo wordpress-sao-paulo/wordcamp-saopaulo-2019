@@ -189,7 +189,7 @@
 	z-index: 8;
 	display: flex;
 	justify-content: flex-end;
-	top: 250px;
+	top: 185px;
 	width: 32px;
 
 	@include media-breakpoint-up(lg) {
@@ -198,7 +198,7 @@
 
 
 	body.home & {
-		top: 340px;
+		top: 285px;
 
 		@include media-breakpoint-up(lg) {
 			top: 35vh;
