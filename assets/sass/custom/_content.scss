@@ -11,7 +11,9 @@
 }
 
 
-.entry-content {
-	@include make-container();
-	@include make-container-max-widths();
+body:not(.home) {
+	.entry-content {
+		@include make-container();
+		@include make-container-max-widths();
+	}
 }
