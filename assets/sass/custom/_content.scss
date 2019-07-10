@@ -13,7 +13,7 @@ body:not(.blog) {
 	}
 }
 
-body:not(.home) {
+body:not(.home):not(.blog) {
 	.entry-content {
 		max-width: 900px;
 		margin: 0 auto;
@@ -27,10 +27,27 @@ body:not(.home) {
 
 
 body.blog {
-	padding-top: 180px;
+
+	#content {
+
+		&:before {
+			content: 'Blog';
+			display: block;
+			width: 100%;
+			background: $gradient-dark;
+			@include one-side-container-margin( padding, 0px );
+			padding-top: 180px !important;
+			padding-bottom: 60px !important;
+			margin-bottom: 5vh;
+			@extend h1;
+			color: $white;
+		}
+	}
 
 	article {
 		margin: 0 auto 45px auto;
+		max-width: 900px;
+		padding: 15px;
 
 		.entry-title {
 			@extend h1;
@@ -41,13 +58,10 @@ body.blog {
 			}
 		}
 
-		.wp-block-rss__item-publish-date,
-		.wp-block-rss__item-author {
-			@extend .alt;
-		}
-
-		.wp-block-rss__item-excerpt {
-			margin: 15px 0;
+		.entry-meta {
+			font-size: $font-size-sm;
+			color: $gray-500;
+			margin-bottom: 2em;
 		}
 	}
 }
