@@ -160,12 +160,17 @@
 #after-header-widgets {
 	width: 100%;
 	position: absolute;
+	right: 15px;
 	@include one-side-container-margin( right, 0px );
 	z-index: 8;
 	display: flex;
 	justify-content: flex-end;
 	width: 32px;
-	top: 160px;
+	top: 240px;
+
+	@include media-breakpoint-up(lg) {
+		top: 160px;
+	}
 
 	body.home & {
 		top: 38vh;

@@ -2,8 +2,12 @@
 body:not(.blog) {
 	.entry-header:first-of-type {
 		background: $gradient-dark;
-		padding: 180px 0 60px 0;
 		margin-bottom: 5vh;
+		padding: 60px 0;
+
+		@include media-breakpoint-up(lg) {
+			padding: 180px 0 60px 0;
+		}
 
 		.entry-title {
 			@include make-container();
