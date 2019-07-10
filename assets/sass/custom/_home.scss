@@ -19,6 +19,7 @@ body.home {
 			top: 50%;
 			transform: translate(-50%, -50%);
 			width: auto;
+			max-width: 600px;
 			margin: 0;
 			z-index: $zindex-header - 50;
 			display: flex;
@@ -55,6 +56,7 @@ body.home {
 
 	h2 {
 		@extend .display-title;
+		margin-bottom: 30px;
 	}
 }
 
@@ -128,5 +130,17 @@ body.home {
 	h2 {
 		@extend .display-title;
 		margin-bottom: 0;
+	}
+}
+
+.section-target-audience {
+	margin-bottom: 60px;
+
+	@include media-breakpoint-up(lg) {
+
+		.wp-block-column:not(:first-of-type) {
+			margin-top: 60px;
+		}
+
 	}
 }
