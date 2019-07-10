@@ -1,12 +1,15 @@
-.entry-header {
-	background: $gradient-dark;
-	padding: 180px 0 60px 0;
-	margin-bottom: 5vh;
 
-	.entry-title {
-		@include make-container();
-		@include make-container-max-widths();
-		color: $white;
+body:not(.blog) {
+	.entry-header:first-of-type {
+		background: $gradient-dark;
+		padding: 180px 0 60px 0;
+		margin-bottom: 5vh;
+
+		.entry-title {
+			@include make-container();
+			@include make-container-max-widths();
+			color: $white;
+		}
 	}
 }
 
@@ -19,5 +22,41 @@ body:not(.home) {
 		h2, .h2 {
 			margin: 1.3em 0 .6em;
 		}
+	}
+}
+
+
+body.blog {
+	padding-top: 180px;
+
+	article {
+		margin: 0 auto 45px auto;
+
+		.entry-title {
+			@extend h1;
+			margin: 0;
+
+			a {
+				color: $black;
+			}
+		}
+
+		.wp-block-rss__item-publish-date,
+		.wp-block-rss__item-author {
+			@extend .alt;
+		}
+
+		.wp-block-rss__item-excerpt {
+			margin: 15px 0;
+		}
+	}
+}
+
+.entry-meta {
+	@extend .alt;
+	color: currentColor;
+
+	a {
+		color: inherit;
 	}
 }
