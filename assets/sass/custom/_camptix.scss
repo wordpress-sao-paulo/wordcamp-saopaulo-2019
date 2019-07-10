@@ -16,8 +16,8 @@
 		display: none;
 	}
 
-	/* Stack columns on mobile */
 	@include media-breakpoint-down(md) {
+		/* Stack columns on mobile */
 		.tix-attendee-form tr td.tix-left,
 		.tix-attendee-form tr td.tix-right {
 			display: block;
