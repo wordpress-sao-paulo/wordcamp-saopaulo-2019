@@ -9,3 +9,9 @@
 		color: $white;
 	}
 }
+
+
+.entry-content {
+	@include make-container();
+	@include make-container-max-widths();
+}
