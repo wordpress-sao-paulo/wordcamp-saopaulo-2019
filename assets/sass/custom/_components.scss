@@ -33,3 +33,17 @@ iframe {
 		max-height: 60vw;
 	}
 }
+
+// Cookies alert
+
+#eu-cookie-law {
+    box-shadow: 0 10px 20px;
+    color: rgba( $black,0.7);
+    line-height: 1.5;
+    padding: 1em 2em;
+
+	input {
+		background: $black;
+		color: $white;
+	}
+}
