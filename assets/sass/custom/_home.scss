@@ -135,8 +135,8 @@ body.home {
 	color: $white;
 	padding: 15px;
 	@include one-side-container-margin( padding, 0px );
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 15vmin !important;
+	padding-bottom: 15vmin !important;
 	position: relative;
 	margin-bottom: 60px;
 
@@ -164,7 +164,7 @@ body.home {
 
 	h2 {
 		@extend .display-title;
-		margin-bottom: 0;
+		margin-bottom: 15px;
 	}
 }
 
