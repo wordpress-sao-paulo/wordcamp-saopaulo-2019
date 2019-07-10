@@ -4,3 +4,13 @@
 	text-transform: uppercase;
 	font-weight: 400;
 }
+
+.display-title {
+	font-size: $h1-font-size;
+	text-transform: uppercase;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3 {
+	letter-spacing: -0.03em;
+}

@@ -4,6 +4,7 @@ body.home {
 	}
 }
 
+// Banner
 .home-banner {
 	position: relative;
 	color: $white;
@@ -53,7 +54,79 @@ body.home {
 	}
 
 	h2 {
-		font-size: $h1-font-size;
-		text-transform: uppercase;
+		@extend .display-title;
+	}
+}
+
+// Home content sections
+//
+
+body.home {
+
+	.entry-content {
+		> *:not(.full-width) {
+			@include make-container();
+			@include make-container-max-widths();
+		}
+
+	}
+}
+
+.home-section {
+	h2 {
+		margin-bottom: 1em;
+	}
+
+	p {
+		line-height: 1.9;
+	}
+
+}
+
+.section-about-wordcamp {
+
+	@include media-breakpoint-up(lg) {
+		p {
+			margin-left: 7vw;
+		}
+
+		img {
+			margin-top: -220px;
+			z-index: 100;
+			position: relative;
+		}
+	}
+}
+
+.section-call-to-action {
+	background: url('https://2019.saopaulo.wordcamp.org/files/2019/07/wordcamp-sao-paulo-2018-foto-geral.jpg') fixed center / cover;
+	color: $white;
+	@include one-side-container-margin( padding, 0px );
+	padding-top: 30px;
+	padding-bottom: 30px;
+	position: relative;
+	margin-bottom: 60px;
+
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba( $black, 0.6 );
+	}
+
+	.wp-block-column {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0;
+		z-index: 10;
+	}
+
+	h2 {
+		@extend .display-title;
+		margin-bottom: 0;
 	}
 }
