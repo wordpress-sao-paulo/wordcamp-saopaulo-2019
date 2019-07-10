@@ -133,11 +133,16 @@ body.home {
 .section-call-to-action {
 	background: url('https://2019.saopaulo.wordcamp.org/files/2019/07/wordcamp-sao-paulo-2018-foto-geral.jpg') fixed center / cover;
 	color: $white;
+	padding: 15px;
 	@include one-side-container-margin( padding, 0px );
 	padding-top: 30px;
 	padding-bottom: 30px;
 	position: relative;
 	margin-bottom: 60px;
+
+	@include media-breakpoint-down(md) {
+		text-align: center;
+	}
 
 	&:after {
 		content: '';
