@@ -18,13 +18,15 @@
 	}
 
 	.site-title {
-		background: url("https://2019.saopaulo.wordcamp.org/files/2019/07/logo-wcsp2019.png") no-repeat left center/contain;
-		min-width: 170px;
-		min-height: 100px;
-		margin-right: 45px;
-		color: rgba($white, 0);
-		text-indent: -99999999px;
-		font-size: 8px;
+		 a {
+			 background: url("https://2019.saopaulo.wordcamp.org/files/2019/07/logo-wcsp2019.png") no-repeat left center/contain;
+			 min-width: 170px;
+			 min-height: 100px;
+			 margin-right: 45px;
+			 color: rgba($white, 0);
+			 font-size: 8px;
+			 display: block;
+		 }
 	}
 
 	.site-description {
