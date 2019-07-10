@@ -3,7 +3,7 @@
 	@extend .navbar-expand-lg;
 	@extend .navbar-dark;
 	@include one-side-container-margin( padding, 0px );
-	padding-top: 15px !important;
+	padding-top: 0 !important;
 	padding-bottom: 15px !important;
 	justify-content: space-between;
 	position: absolute;
@@ -18,6 +18,18 @@
 
 		.site-navigation {
 			width: 100%;
+		}
+
+		h1.assistive-text {
+			position: unset;
+			width: unset;
+			height: unset;
+			padding: unset;
+			overflow: unset;
+			clip: unset;
+			white-space: unset;
+			border: unset;
+			@extend .menu-toggle;
 		}
 
 		.menu-toggle {
@@ -110,6 +122,13 @@
 
 		> a {
 			@extend .nav-link;
+			border-bottom: 2px solid transparent;
+
+			&:hover,
+			&:active,
+			&:focus {
+				border-color: $primary;
+			}
 		}
 	}
 
