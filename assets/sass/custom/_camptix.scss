@@ -23,5 +23,11 @@
 			display: block;
 			width: 100%;
 		}
+
+		/* Make form fields visible on mobile */
+		input,
+		select {
+			border: $input-border-width solid $input-border-color;;
+		}
 	}
 }
