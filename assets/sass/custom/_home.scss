@@ -191,3 +191,37 @@ body.home {
 		justify-content: center;
 	}
 }
+
+.section-blog-title {
+}
+
+.section-blog {
+	list-style: none;
+	background: rgba($black, .05);
+	padding: 45px 0;
+	margin: 15px 0 0 0;
+
+
+	li {
+		max-width: 600px;
+		margin: 0 auto 45px auto;
+
+		.wp-block-rss__item-title {
+			@extend h1;
+			margin: 0;
+
+			a {
+				color: $black;
+			}
+		}
+
+		.wp-block-rss__item-publish-date,
+		.wp-block-rss__item-author {
+			@extend .alt;
+		}
+
+		.wp-block-rss__item-excerpt {
+			margin: 15px 0;
+		}
+	}
+}
