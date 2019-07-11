@@ -70,6 +70,7 @@ body.blog {
 			font-size: $font-size-sm;
 			color: $gray-500;
 			margin-bottom: 2em;
+			padding: 0;
 		}
 	}
 }
@@ -79,10 +80,8 @@ body.blog {
 	color: currentColor;
 	max-width: 900px;
 	margin: 0 auto;
+	padding: 0 15px;
 
-	@include media-breakpoint-down(md) {
-		padding: 0 15px;
-	}
 
 	a {
 		color: inherit;
