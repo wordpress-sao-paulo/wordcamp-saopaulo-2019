@@ -80,6 +80,10 @@ body.blog {
 	max-width: 900px;
 	margin: 0 auto;
 
+	@include media-breakpoint-down(md) {
+		padding: 0 15px;
+	}
+
 	a {
 		color: inherit;
 	}
