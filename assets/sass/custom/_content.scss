@@ -77,6 +77,8 @@ body.blog {
 .entry-meta {
 	@extend .alt;
 	color: currentColor;
+	max-width: 900px;
+	margin: 0 auto;
 
 	a {
 		color: inherit;
