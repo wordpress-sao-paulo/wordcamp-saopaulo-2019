@@ -1,0 +1,62 @@
+#comments {
+	height: auto;
+	margin: 2em auto;
+	max-width: 900px;
+
+	.comment-respond {
+		padding-top: 2em;
+
+		.comment-form {
+			input[type="text"],
+			textarea {
+				@extend .form-control;
+			}
+			
+			input[type="checkbox"] {
+				@extend .form-check-input;
+			}
+			
+			.comment-form-cookies-consent label,
+			.subscribe-label {
+				@extend .form-check-label;
+			}
+
+			@include media-breakpoint-down(md) {
+				input[type="checkbox"] {
+					margin-left: 0;
+				}
+
+				.comment-form-cookies-consent label,
+				.subscribe-label {
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+	input[type="submit"] {
+		@extend .btn;
+		@extend .btn-primary;
+		min-width: 200px;
+	}
+	.commentlist {
+		list-style-type: none;
+		padding: 0;
+
+		li li {
+			padding-left: 2em;
+		}
+
+		.comment article {
+			border-bottom: 1px solid rgba($black, .05);
+			padding: 2em;
+
+			.comment-author .avatar {
+				display: inline-block;
+				float: left;
+				border-radius: 50%;
+				margin-right: .5em;
+				max-width: 50px;
+			}
+		}
+	}
+}
