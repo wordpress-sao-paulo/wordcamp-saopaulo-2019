@@ -2,6 +2,10 @@
 	margin: 2em auto;
 	max-width: 900px;
 
+	@include media-breakpoint-down(md) {
+		padding: 0 15px;
+	}
+
 	.comment-respond {
 		padding-top: 2em;
 
