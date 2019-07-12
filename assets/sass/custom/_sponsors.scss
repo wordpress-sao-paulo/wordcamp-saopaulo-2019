@@ -1,0 +1,113 @@
+// Sponsors page
+
+.wcorg-sponsors {
+	.wcorg-sponsor-level-infraestrutura {
+		h2 {
+			margin-top: 0 !important;
+		}
+	}
+}
+
+.wcorg-sponsor {
+	padding: 30px;
+	border: 1px solid $gray-200;
+	margin-bottom: 30px;
+
+	h3 {
+		border-bottom: 1px solid $gray-200;
+		padding-bottom: .5em;
+
+		a {
+			color: $black;
+		}
+
+	}
+	.wcorg-sponsor-description {
+		> a:first-of-type {
+			display: block;
+			padding: 30px 0;
+
+			img {
+				display: block;
+				margin: 0 auto;
+				max-width: 300px;
+			}
+		}
+	}
+}
+
+
+// Sponsors widget
+
+.wcb_widget_sponsors {
+	@include make-container();
+	@include make-container-max-widths();
+
+	text-align: center;
+	padding-top: 45px;
+	margin-bottom: 45px;
+	border-bottom: 2px solid $gray-200;
+
+	.widget-title {
+		margin-bottom: 1em;
+	}
+
+	.sponsor-level {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-bottom: 45px;
+
+		.sponsor-level-title {
+			@extend .alt;
+			color: $gray-500;
+			font-size: $font-size-base;
+			flex: 1 0 100%;
+			margin-bottom: 15px;
+			padding-bottom: .5em;
+			border-bottom: 2px solid $gray-200;
+		}
+
+		.sponsor-logo {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 15px;
+
+			img {
+				width: auto;
+				height: auto;
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+
+		&.infraestrutura {
+			.sponsor-logo {
+				width: 300px;
+				height: 180px;
+			}
+		}
+
+		&.paulista {
+			.sponsor-logo {
+				width: 280px;
+				height: 140px;
+			}
+		}
+
+		&.ibirapuera {
+			.sponsor-logo {
+				width: 240px;
+				height: 120px;
+			}
+		}
+
+		&.augusta {
+			.sponsor-logo {
+				width: 200px;
+				height: 100px;
+			}
+		}
+	}
+}
