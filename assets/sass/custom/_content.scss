@@ -9,7 +9,7 @@ body:not(.blog) {
 			padding: 180px 0 60px 0;
 		}
 
-		.entry-title {
+		> * {
 			@include make-container();
 			@include make-container-max-widths();
 			color: $white;
@@ -43,7 +43,7 @@ body.blog {
 			@extend h1;
 			color: $white;
 			padding: 60px 60px 60px 15px;
-			
+
 			@include media-breakpoint-up(lg) {
 				padding: 180px 0 60px 15px;
 			}
