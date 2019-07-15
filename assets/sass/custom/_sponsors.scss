@@ -11,7 +11,7 @@
 .wcorg-sponsor {
 	padding: 30px;
 	border: 1px solid $gray-200;
-	margin-bottom: 30px;
+	margin-bottom: 7vmin;
 
 	h3 {
 		border-bottom: 1px solid $gray-200;
@@ -30,7 +30,11 @@
 			img {
 				display: block;
 				margin: 0 auto;
-				max-width: 300px;
+				max-width: 100%;
+
+				@include media-breakpoint-up(lg){
+					max-width: 300px;
+				}
 			}
 		}
 	}
