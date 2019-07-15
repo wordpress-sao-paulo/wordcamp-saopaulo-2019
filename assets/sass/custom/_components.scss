@@ -47,3 +47,9 @@ iframe {
 		color: $white;
 	}
 }
+
+// Images
+.avatar {
+	@extend .rounded-circle;
+	border: 1px solid $gray-200;
+}
