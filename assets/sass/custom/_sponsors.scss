@@ -115,3 +115,16 @@
 		}
 	}
 }
+
+.single-wcb_sponsor {
+	.site-content #content {
+		display: flex;
+		flex-direction: column;
+
+		.attachment-post-thumbnail {
+			order: 2;
+			max-width: 900px;
+			margin: 0 auto 5em;
+		}
+	}
+}
