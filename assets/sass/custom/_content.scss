@@ -1,4 +1,5 @@
 
+
 body:not(.blog) {
 	.entry-header:first-of-type {
 		background: $gradient-dark;
@@ -85,5 +86,51 @@ body.blog {
 
 	a {
 		color: inherit;
+	}
+}
+
+.post-navigation {
+	margin: 2em auto;
+	max-width: 900px;
+	width: 100%;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	@include media-breakpoint-down(sm) {
+		flex-direction: column;
+	}
+
+	.nav-previous,
+	.nav-next {
+		width: 50%;
+
+		@include media-breakpoint-down(sm) {
+			width: 100%;
+		}
+	}
+
+	.nav-previous {
+		text-align: left;
+	}
+
+	.nav-next {
+		text-align: right;
+	}
+
+	.nav-previous a,
+	.nav-next a {
+		background: rgba($black, .05);
+		display: block;
+		height: 100%;
+		padding: 2em;
+		width: 100%;
+
+		&:hover {
+			background: $gradient-dark;
+			color: $white;
+			text-decoration: none;
+		}
 	}
 }
