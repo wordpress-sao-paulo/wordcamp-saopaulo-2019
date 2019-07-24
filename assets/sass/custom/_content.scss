@@ -96,7 +96,7 @@ body.blog {
 	padding: 15px;
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: space-between;
 
 	@include media-breakpoint-down(sm) {
 		flex-direction: column;
