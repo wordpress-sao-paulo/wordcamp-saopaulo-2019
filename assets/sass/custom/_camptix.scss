@@ -15,6 +15,13 @@
 	.tix_tickets_table .tix-column-remaining {
 		display: none;
 	}
+	
+	.tix-submit {
+		float: none;
+	}
+	.tix-wide-tab {
+		width: 100%;
+	}
 
 	@include media-breakpoint-down(md) {
 		/* Stack columns on mobile */
