@@ -99,30 +99,34 @@
 				height: 140px;
 			}
 		}
-
 		&.ibirapuera {
 			.sponsor-logo {
 				width: 240px;
 				height: 120px;
 			}
 		}
-
 		&.augusta {
 			.sponsor-logo {
 				width: 200px;
 				height: 100px;
 			}
 		}
+		&.ipiranga {
+			.sponsor-logo {
+				width: 180px;
+				height: 100px;
+			}
+		}
 		&.se {
 			.sponsor-logo {
 				width: 160px;
-				height: 100px;
+				height: 80px;
 			}
 		}
 		&.apoio {
 			.sponsor-logo {
 				width: 140px;
-				height: 100px;
+				height: 80px;
 			}
 		}
 	}
@@ -137,7 +141,7 @@
 			order: 2;
 			max-width: 900px;
 			margin: 0 auto 5em;
-			
+
 			@include media-breakpoint-down(md) {
 				height: auto;
 				width: 90%;
