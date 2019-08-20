@@ -82,10 +82,15 @@ body.blog {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 0 15px;
-
+	font-size: $font-size-xs;
 
 	a {
 		color: inherit;
+		text-decoration: underline;
+	}
+
+	@at-root footer#{&} {
+		opacity: .5;
 	}
 }
 
