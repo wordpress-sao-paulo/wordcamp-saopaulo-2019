@@ -120,8 +120,11 @@
 	> .menu-item {
 		@extend .nav-item;
 
-		> a {
+		 > a {
 			@extend .nav-link;
+		}
+
+		&:not(.btn):not(.btn-sm) {
 			border-bottom: 2px solid transparent;
 
 			&:hover,
