@@ -86,8 +86,12 @@
 	hgroup {
 		display: flex;
 	    align-items: stretch;
-		justify-content: space-between;
 		width: 100%;
+		justify-content: space-between;
+
+		@include media-breakpoint-up(md) {
+			width: auto;
+		}
 	}
 
 	.site-title {
