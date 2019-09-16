@@ -80,6 +80,9 @@ body.page-slug-programacao {
 
 
 .schedule-caption {
+	list-style: none;
+	padding: 0;
+	
 	li {
 		&:before {
 			content: '';
@@ -90,23 +93,24 @@ body.page-slug-programacao {
 			background: $gray-100;
 		}
 	}
-	&.desenvolvimento:before {
+
+	.desenvolvimento:before {
 		background: $indigo;
 	}
 
-	&.design:before {
+	.design:before {
 		background: $cyan;
 	}
 
-	&.negocios:before {
+	.negocios:before {
 		background: $pink;
 	}
 
-	&.conteudo:before {
+	.conteudo:before {
 		background: $green;
 	}
 
-	&.comunidade:before {
+	.comunidade:before {
 		background: $yellow;
 	}
 }
