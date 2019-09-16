@@ -1,0 +1,112 @@
+body.page-slug-programacao {
+	.entry-content {
+		min-width: 1140px;
+	}
+}
+
+// Schedule table
+
+
+
+.wcpt-schedule {
+    line-height: 1.3;
+
+	td {
+		padding: .75em .5em;
+	}
+
+	tr:not(.global-session) {
+		.wcpt-session-type-session  {
+			border-left: 5px solid currentColor;
+
+			&.wcb-track-desenvolvimento {
+				color: $indigo;
+			}
+
+			&.wcb-track-design {
+				color: $cyan;
+			}
+
+			&.wcb-track-negocios {
+				color: $pink;
+			}
+
+			&.wcb-track-conteudo {
+				color: $green;
+			}
+
+			&.wcb-track-comunidade {
+				color: $yellow;
+			}
+		}
+
+		&:nth-of-type(even) {
+			td {
+				background: rgba($black, .03);
+			}
+		}
+	}
+
+	.global-session {
+		td {
+			background: rgba($yellow, .2);
+		}
+
+		.wcpt-session-title {
+			color: darken($yellow, 25%);
+			font-weight: 700;
+		}
+	}
+
+	.wcpt-time {
+		color: rgba($black, .5);
+	}
+
+	.wcpt-session-title {
+		color: $black;
+		font-size: .95rem;
+	}
+	.wcpt-session-speakers {
+		font-size: .8em;
+		text-transform: uppercase;
+		display: block;
+
+		a {
+			color: $black;
+			font-weight: 700;
+		}
+	}
+}
+
+
+.schedule-caption {
+	li {
+		&:before {
+			content: '';
+			display: inline-block;
+			margin-right: 1em;
+			height: 1.2em;
+			width: 1.2em;
+			background: $gray-100;
+		}
+	}
+	&.desenvolvimento:before {
+		background: $indigo;
+	}
+
+	&.design:before {
+		background: $cyan;
+	}
+
+	&.negocios:before {
+		background: $pink;
+	}
+
+	&.conteudo:before {
+		background: $green;
+	}
+
+	&.comunidade:before {
+		background: $yellow;
+	}
+}
