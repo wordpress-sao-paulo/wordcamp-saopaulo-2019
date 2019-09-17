@@ -46,6 +46,35 @@
 			&.wcb-track-comunidade {
 				color: $yellow;
 			}
+
+
+			@include media-breakpoint-down(sm) {
+				display: flex;
+				flex-direction: column;
+
+				&:before {
+				   content: attr( data-track-title );
+				   width: auto;
+				   height: auto;
+				   padding: 0 0 .3em 0;
+				   border: 0;
+				   border-bottom: 1px solid $gray-200;
+				   font-size: $font-size-sm;
+				   font-family: $font-family-monospace;
+				}
+
+				.wcpt-session-title {
+					padding: 0;
+				}
+
+				.wcpt-session-speakers {
+					padding: 0;
+
+					&:before {
+						content: unset;
+					}
+				}
+			}
 		}
 
 		&:nth-of-type(even) {
@@ -85,6 +114,13 @@
 		}
 	}
 }
+
+@include media-breakpoint-down(sm) {
+	&.wcpt-session-empty {
+		display: none;
+	}
+}
+
 
 .wcb-favourite-session {
     background: #e0f8ff !important;
