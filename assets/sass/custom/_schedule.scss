@@ -1,12 +1,12 @@
-body.page-slug-programacao {
-	.entry-content {
-		min-width: 1140px;
+@include media-breakpoint-up(lg) {
+	body.page-slug-programacao {
+		.entry-content {
+			min-width: 1140px;
+		}
 	}
 }
 
 // Schedule table
-
-
 
 .wcpt-schedule {
     line-height: 1.3;
