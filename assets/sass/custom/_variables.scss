@@ -293,7 +293,7 @@ $display4-weight:             300;
 $display-line-height:         $headings-line-height;
 
 $lead-font-size:              ($font-size-base * 1.25);
-$lead-font-weight:            300;
+$lead-font-weight:            initial; 
 
 $small-font-size:             80%;
 
