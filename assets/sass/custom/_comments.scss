@@ -14,11 +14,11 @@
 			textarea {
 				@extend .form-control;
 			}
-			
+
 			input[type="checkbox"] {
 				@extend .form-check-input;
 			}
-			
+
 			.comment-form-cookies-consent label,
 			.subscribe-label {
 				@extend .form-check-label;
@@ -36,24 +36,78 @@
 			}
 		}
 	}
+
 	input[type="submit"] {
 		@extend .btn;
 		@extend .btn-primary;
 		min-width: 200px;
 	}
+
 	.commentlist {
 		list-style-type: none;
 		padding: 0;
 
 		li li {
-			padding-left: 2em;
+			padding-left: calc(4vw + 20px);
+
+			&:first-child {
+
+				article {
+					position: relative;
+
+					&:before {
+						content: '';
+						display: block;
+						width: 2em;
+						height: 2em;
+						position: absolute;
+						right: 100%;
+						top: -.5em;
+						border: 1px solid rgba(0,0,0,.1);
+						border-width: 0 0 1px 1px;
+						border-radius: 0 0 0 50%;
+					}
+				}
+			}
+		}
+	}
+
+	li.comment {
+		margin: .5em 0;
+	}
+
+	article {
+		border: 1px solid $gray-200;
+		box-shadow: 0 2px 4px rgba(0,0,0,.1);
+		padding: 1em 2em;
+
+		> footer {
+			font-size: $font-size-sm;
+			color: $gray-700;
+			opacity: .8;
+			display: grid;
+			grid-template-areas: "a a";
+			grid-auto-columns: max-content;
+			grid-gap: 1em;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 1em;
+
+			a {
+				// color: $black;
+			}
+
+			cite {
+				font-style: normal;
+				margin-right: .25em;
+			}
 		}
 
-		.comment article {
-			border-bottom: 2px solid #e9ecef;
-			padding: 2em;
+		.comment-author {
+			display: flex;
+			align-items: center;
 
-			.comment-author .avatar {
+			.avatar {
 				display: inline-block;
 				float: left;
 				border-radius: 50%;
@@ -61,5 +115,10 @@
 				max-width: 50px;
 			}
 		}
+	}
+
+	.children {
+		padding: 0;
+		list-style: none;
 	}
 }
