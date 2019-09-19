@@ -109,7 +109,7 @@
 	}
 
 	.site-description {
-		@extend .alt;
+		@extend .text-alt;
 		color: rgba( $white, .6 );
 		max-width: 100px;
 		font-size: $font-size-xs;

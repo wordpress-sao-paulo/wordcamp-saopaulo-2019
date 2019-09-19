@@ -77,7 +77,7 @@ body.blog {
 }
 
 .entry-meta {
-	@extend .alt;
+	@extend .text-alt;
 	color: currentColor;
 	max-width: 900px;
 	margin: 0 auto;

@@ -254,7 +254,7 @@ body.home {
 
 		.wp-block-rss__item-publish-date,
 		.wp-block-rss__item-author {
-			@extend .alt;
+			@extend .text-alt;
 		}
 
 		.wp-block-rss__item-excerpt {
