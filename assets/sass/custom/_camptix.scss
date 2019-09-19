@@ -15,12 +15,22 @@
 	.tix_tickets_table .tix-column-remaining {
 		display: none;
 	}
-	
+
 	.tix-submit {
 		float: none;
 	}
 	.tix-wide-tab {
 		width: 100%;
+	}
+
+	#tix-coupon-link {
+		border: 2px dotted #777;
+		padding: 5px;
+		color: #777;
+
+		&:before {
+			content:"🎫"
+		}
 	}
 
 	@include media-breakpoint-down(md) {
